@@ -1,0 +1,19 @@
+\begin{tabular}{llrrrrrrrr}
+\toprule
+{} &                                                                           feats &   P bi &   R bi &  F1 bi &  acc bi &  P tri &  R tri &  F1 tri &  acc tri \\ \hline
+\midrule
+0  &                                                                           tfidf &  0.688 &  0.722 &  0.695 &   0.730 &  0.481 &  0.608 &   0.500 &    0.671 \\ \hline
+1  &                                                              tfidf + body\_stats &  0.687 &  0.721 &  0.694 &   0.729 &  0.481 &  0.606 &   0.500 &    0.671 \\ \hline
+2  &                                                  tfidf + body\_stats + syntactic &  0.701 &  0.735 &  0.708 &   0.741 &  0.499 &  0.629 &   0.522 &    0.685 \\ \hline
+3  &                                     tfidf + body\_stats + syntactic + indicators &  0.709 &  0.742 &  0.717 &   0.748 &  0.506 &  0.641 &   0.531 &    0.690 \\ \hline
+4  &                                                                         medical &  0.678 &  0.702 &  0.684 &   0.716 &  0.454 &  0.556 &   0.453 &    0.655 \\ \hline
+5  &                                                                 tfidf + medical &  0.689 &  0.717 &  0.695 &   0.728 &  0.498 &  0.623 &   0.521 &    0.681 \\ \hline
+6  &                           tfidf + body\_stats + syntactic + indicators + medical &  0.712 &  0.745 &  0.720 &   0.750 &  0.513 &  0.643 &   0.539 &    0.693 \\ \hline
+7  &                                                                      embeddings &  0.504 &  0.535 &  0.407 &   0.614 &  0.335 &  0.539 &   0.257 &    0.618 \\ \hline
+8  &                                                              tfidf + embeddings &  0.697 &  0.733 &  0.704 &   0.738 &  0.481 &  0.619 &   0.501 &    0.675 \\ \hline
+9  &              tfidf + body\_stats + syntactic + indicators + medical + embeddings &  0.712 &  0.746 &  0.720 &   0.751 &  0.507 &  0.636 &   0.531 &    0.690 \\ \hline
+10 &                                                                       sentiment &  0.500 &  0.308 &  0.381 &   0.617 &  0.333 &  0.206 &   0.254 &    0.617 \\ \hline
+11 &               tfidf + body\_stats + syntactic + indicators + medical + sentiment &  0.712 &  0.744 &  0.720 &   0.750 &  0.516 &  0.644 &   0.542 &    0.694 \\ \hline
+12 &  tfidf + body\_stats + syntactic + indicators + medical + embeddings + sentiment &  0.713 &  0.745 &  0.721 &   0.751 &  0.509 &  0.642 &   0.534 &    0.690 \\ \hline
+\bottomrule
+\end{tabular}
